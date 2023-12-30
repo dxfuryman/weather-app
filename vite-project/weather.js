@@ -43,3 +43,12 @@ function parseCurrentWeather({ current_weather, daily}){
         iconCode,
     }
 }
+function parseDailyWeather({ diily }){
+    return daily.time.map((time, index) => {
+        return {
+            timestamp: time * 1000,
+            iconCode: daily.weathercode[index],
+            maxTemp: Math.round(daily.temperature_2m_max[index]),
+        }
+    })
+}
