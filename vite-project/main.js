@@ -1,4 +1,4 @@
-import { getweather} from "./weather.js";
+import { getWeather} from "./weather.js";
 import { ICON_MAP } from "./iconMap"
 navigator.geolocation.getCurrentPosition(positionSuccess, positionError)
 // getweather(10, 10, Intl.DateTimeFormat().resolvedOptions().timeZone).then(res => {
