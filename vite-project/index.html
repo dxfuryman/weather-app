@@ -2,12 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="./public/img.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body >
+<header class="header">
+<div class="header-left">
+  <img class="weather-icon large"  src="https://cdn-icons-png.flaticon.com/128/439/439842.png" data-current-icon >
+  <div class="header-current-temp">
+    <span data-current-temp>31</span>&deg;
+  </div>
+</div>
+<div class="header-right">
+  <div class="info-group">
+    <div class="label">High</div>
+    <div><span data-current-high>32</span>&deg;</div>
+  </div>
+  <div class="info-group">
+    <div class="label">FL High</div>
+    <div><span data-current-fl-high>27</span>&deg;</div>
+  </div>
+  <div class="info-group">
+    <div class="label">Wind</div>
+    <div><span data-current-wind>9</span><div class="value-sub-info">mph</div></div>
+  </div>
+  <div class="info-group">
+    <div class="label">Low</div>
+    <div><span data-current-low>19</span>&deg;</div>
+  </div>
+  <div class="info-group">
+    <div class="label">FL Low</div>
+    <div><span data-current-fl-low>12</span>&deg;</div>
+  </div>
+  <div class="info-group">
+    <div class="label">Precip</div>
+    <div><span data-current-precip>0.1</span><div class="value-sub-info">in </div></div>
+  </div>
+
+</div>
+</header>
+  <section class="day-section" data-day-section></section>
   </body>
+<script type="module" src="main.js"></script>
 </html>
